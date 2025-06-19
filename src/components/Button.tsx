@@ -5,6 +5,7 @@ interface ButtonProps {
   children: React.ReactNode;
   className?: string;
   "aria-label"?: string;
+  type?: "button" | "submit" | "reset";
 }
 
 const Button: React.FC<ButtonProps> = ({
