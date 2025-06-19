@@ -70,7 +70,7 @@ const TodoApp: React.FC = () => {
   const tasksLeft = tasks.filter((task) => !task.completed).length;
 
   return (
-    <div className="max-w-xl md:max-w-2xl mx-20 md:mx-auto mt-20 ">
+    <div className="max-w-xl md:max-w-2xl mx-10 md:mx-auto mt-20 ">
       <header className="flex justify-between items-center mb-8">
         <h1 className="text-4xl md:text-5xl  font-extrabold tracking-tight text-gray-900 dark:text-white">
           Todo App
