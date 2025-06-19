@@ -14,8 +14,7 @@ interface EditModalProps {
 const EditModal: React.FC<EditModalProps> = ({ task, onSave, onCancel }) => {
   const [text, setText] = useState<string>(task.text);
 
-  // Deliberate error: incorrect use of useRef type
-  const inputRef = useRef<HTMLInputElement | null | string>(null); // This will cause an error
+  const inputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
     if (inputRef.current) {
